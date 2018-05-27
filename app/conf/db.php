@@ -6,5 +6,5 @@
  * @author zlexus
  */
 class db {
-    const USER = ""
+    const USER = "";
 }
