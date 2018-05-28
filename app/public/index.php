@@ -1,11 +1,6 @@
-<!DOCTYPE html>
+<?php
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
-</html>
+require_once ("../conf/config.php");
+
+?>
+    

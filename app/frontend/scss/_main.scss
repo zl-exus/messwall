@@ -1,0 +1,30 @@
+.form-wrap{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.post-header{
+    display: flex;
+    flex-direction: row;
+    div{
+        margin-right: 15px;
+    }
+}
+.message{
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.message-text{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.comment{
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: 1px solid darken(#f0f0f0, 20%);
+    .comment{
+        padding-left: 20px;
+    }
+}
+.answ-block{
+    text-align: right;
+}
