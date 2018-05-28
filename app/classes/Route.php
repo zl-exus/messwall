@@ -1,11 +1,12 @@
 <?php
+namespace classes;  
 /*
  * class for routing
  * 
  * 
  */
 
-class Routing
+class Route
 {
 
     public static function buildRoute()

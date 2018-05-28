@@ -37,3 +37,7 @@ INSERT INTO `authors` (`author_id`, `name`, `date_registration`, `email`) VALUES
 /*new messsage_header and message_text*/
 INSERT INTO `message_header` (`parent_post_id`, `author_id`, `has_children`, `posted`, `post_id`) VALUES ('0', '1', '0', CURRENT_TIMESTAMP, '2');
 INSERT INTO `message_body` (`post_id`, `post_text`) VALUES ('2', 'Какой-то ещё текст сообщения Какой-то ещё текст сообщения Какой-то ещё текст сообщения Какой-то ещё текст сообщения Какой-то ещё текст сообщения Какой-то ещё текст сообщения Какой-то ещё текст сообщения Какой-то ещё текст сообщения ');
+
+
+/*get from table*/
+SELECT * FROM `message_header`
