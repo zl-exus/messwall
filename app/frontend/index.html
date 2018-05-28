@@ -18,73 +18,42 @@
         <!--[if lte IE 9]>
           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-        <div class="container">
-            <div class="row">
-                <div class="heading">
+        <div class="header">
+            <div class="container">
+                <div class="row">
                     <h1>Стена сообщений</h1>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0"></h5>
-                            <div class="btn btn-link" data-toggle="collapse" data-target="#message-1" aria-expanded="true" aria-controls="message-1">
-                                <div class="row">
-                                    <div class="col-md-6"><time class="date-publish">27.05.2018</time></div>
-                                    <div class="col-md-6"><span class="author-name">Николай</span></div>
-                                </div>
-                            </div>
+        <form id="message">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Введите сообщение</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Опубликовать</button>
+        </form>
+        <div class="message-block">
+            <div class="container">
+                <div class="row">
+                    <div class="message" data-id="1">
+                        <div class="posted">27.05.18 в 18:00</div>
+                        <div class="author">Андрей</div>
+                        <div class="message-text">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
-
-                        <div id="message-1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="message-text">
-                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#message-2" aria-expanded="false" aria-controls="message-2">
-                                    <div class="row">
-                                        <div class="col-md-6"><time class="date-publish">27.05.2018</time></div>
-                                        <div class="col-md-6"><span class="author-name">Николай</span></div>
-                                    </div>
-                                </div>
-                            </h5>
-                        </div>
-                        <div id="message-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
+                        <div class="comment" data-id="4">
+                            <div class="posted">27.05.18 в 19:00</div>
+                            <div class="author">Изабелла</div>
+                            <div class="message-text">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#message-3" aria-expanded="false" aria-controls="message-3">
-                                    <div class="row">
-                                        <div class="col-md-6"><time class="date-publish">27.05.2018</time></div>
-                                        <div class="col-md-6"><span class="author-name">Николай</span></div>
-                                    </div>
-                                </div>
-                            </h5>
-                        </div>
-                        <div id="message-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                        </div>
-                    </div>
+                    <div class="message" data-id="2"></div>
+                    <div class="message" data-id="3"></div>
                 </div>
             </div>
         </div>
-
         <script src="js/libs.min.js"></script>
         <script src="js/main.min.js"></script>
 
