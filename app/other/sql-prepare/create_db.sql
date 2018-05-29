@@ -41,3 +41,17 @@ INSERT INTO `message_body` (`post_id`, `post_text`) VALUES ('2', 'Какой-т�
 
 /*get from table*/
 SELECT * FROM `message_header`
+
+/* get headers and messages*/
+
+/*SELECT * FROM message_header, message_body, authors  WHERE message_header.post_id = message_body.post_id AND message_header.author_id = authors.author_id;*/
+SELECT * FROM message_header, message_body WHERE message_header.post_id = message_body.post_id
+
+
+/* transactions */
+BEGIN;
+INSERT INTO message_header (parent_post_id, author_id, has_children)
+  VALUES(?, ?, ?);
+INSERT INTO message_body (post_id, post_text) 
+  VALUES(LAST_INSERT_ID(), ?);
+COMMIT;

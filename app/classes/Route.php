@@ -11,6 +11,12 @@ class Route
 
     public static function buildRoute()
     {
+        /* 
+         * http://...../
+         * http://...../authorization
+         * http://...../messages/addmesage
+         * http://...../messages/addcomment
+         */
         /* default ation and controller */
         $controllerName = "IndexController";
         $modelName = "IndexModel";
